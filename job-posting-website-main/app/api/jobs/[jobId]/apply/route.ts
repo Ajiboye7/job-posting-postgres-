@@ -29,7 +29,7 @@ export async function POST(
     });  
 
     if (existingApplication) {
-      return new NextResponse("You already have applied for this job", {
+      return new NextResponse("You already have applied for this job!", {
         status: 400,
       });
     }
